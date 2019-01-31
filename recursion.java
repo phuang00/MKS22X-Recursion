@@ -1,3 +1,4 @@
+import java.util.*;
 public class recursion{
     /*You may write additional private methods */
 
@@ -27,8 +28,16 @@ public class recursion{
     }
 
     /*As Per classwork*/
-    /*public static ArrayList<Integer> makeAllSums(){
-    }*/
+    public static ArrayList<Integer> makeAllSums(int n){
+      ArrayList<Integer> ans = new ArrayList<>();
+      sumsH(n, 0, ans);
+      return ans;
+    }
+
+    private static void sumsH(int n, int ans, List<Integer> l){
+
+    }
+
 
     public static void main(String[] args) {
       /*System.out.println(sqrt(100, 0.0001));
