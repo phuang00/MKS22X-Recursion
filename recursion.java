@@ -54,14 +54,20 @@ public class recursion{
       System.out.println(sqrt(20, 0.0001));
       System.out.println(sqrt(36, 0.0001));
       System.out.println(sqrt(10, 0.0001));
-      System.out.println(sqrt(50, 0.0001));
+      System.out.println(sqrt(50, 0.0001));*/
       System.out.println(fib(0));
       System.out.println(fib(1));
-      System.out.println(fib(5));*/
+      System.out.println(fib(2));
+      System.out.println(fib(3));
+      System.out.println(fib(4));
+      System.out.println(fib(5));
+      System.out.println(fib(6));
+
+      /*
       System.out.println(makeAllSums(4));
       System.out.println(makeAllSums(3));
       System.out.println(makeAllSums(2));
       System.out.println(makeAllSums(1));
-      System.out.println(makeAllSums(0));
+      System.out.println(makeAllSums(0));*/
     }
 }
