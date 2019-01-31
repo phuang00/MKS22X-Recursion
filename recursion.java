@@ -22,9 +22,11 @@ public class recursion{
      *precondition: n is non-negative
      */
     public static int fib(int n){
-      if (n == 0) return 0;
-      if (n == 1) return 1;
-      return fib(n - 1) + fib(n - 2);
+      return fibH(n, 0, 1)
+    }
+
+    private static int fib(int n, int one, int two){
+      
     }
 
     /*As Per classwork*/
