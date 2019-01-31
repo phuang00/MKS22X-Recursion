@@ -17,11 +17,13 @@ public class recursion{
     }
 
     /*Recursively find the n'th fibbonaci number in linear time
-     *fib(0) = 1; fib(1) = 1; fib(5) = 5
+     *fib(0) = 0; fib(1) = 1; fib(5) = 5
      *precondition: n is non-negative
      */
-    /*public static int fib(int n){
-
+    public static int fib(int n){
+      if (n == 0) return 0;
+      if (n == 1) return 1;
+      return fib(n - 1) + fib(n - 2);
     }
 
     /*As Per classwork*/
@@ -29,12 +31,15 @@ public class recursion{
     }*/
 
     public static void main(String[] args) {
-      System.out.println(sqrt(100, 0.0001));
+      /*System.out.println(sqrt(100, 0.0001));
       System.out.println(sqrt(0, 0.0001));
       System.out.println(sqrt(1, 0.0001));
       System.out.println(sqrt(20, 0.0001));
       System.out.println(sqrt(36, 0.0001));
       System.out.println(sqrt(10, 0.0001));
-      System.out.println(sqrt(50, 0.0001));
+      System.out.println(sqrt(50, 0.0001));*/
+      System.out.println(fib(0));
+      System.out.println(fib(1));
+      System.out.println(fib(5));
     }
 }
