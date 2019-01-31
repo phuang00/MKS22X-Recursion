@@ -35,7 +35,11 @@ public class recursion{
     }
 
     private static void sumsH(int n, int ans, List<Integer> l){
-
+      if (n == 0) l.add(ans);
+      else{
+        sumsH(n - 1, ans + n, l);
+        sumsH(n - 1, ans, l);
+      }
     }
 
 
@@ -46,9 +50,14 @@ public class recursion{
       System.out.println(sqrt(20, 0.0001));
       System.out.println(sqrt(36, 0.0001));
       System.out.println(sqrt(10, 0.0001));
-      System.out.println(sqrt(50, 0.0001));*/
+      System.out.println(sqrt(50, 0.0001));
       System.out.println(fib(0));
       System.out.println(fib(1));
-      System.out.println(fib(5));
+      System.out.println(fib(5));*/
+      System.out.println(makeAllSums(4));
+      System.out.println(makeAllSums(3));
+      System.out.println(makeAllSums(2));
+      System.out.println(makeAllSums(1));
+      System.out.println(makeAllSums(0));
     }
 }
